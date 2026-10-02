@@ -1,39 +1,264 @@
-<section id="projects">
-    <h2>Projects</h2>
+portfolio and keeps all three project links you just added.
 
-    <div class="project-card">
-        <h3>Facility Location Optimization</h3>
-        <p>
-            Developed an optimization model based on customer locations, weights,
-            and distance to determine effective facility locations.
-        </p>
-        <a href="https://www.desmos.com/3d/zc2xqmu1bc" target="_blank">
-            View 3D Model →
-        </a>
-        <a href="https://www.desmos.com/calculator/udiejelfoc" target="_blank">
-            View Desmos Model →
-        </a>
-    </div>
+Replace everything in index.html with this:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaryan Raval | Portfolio</title>
 
-    <div class="project-card">
-        <h3>BCG – Introduction to Data for Decision Makers</h3>
-        <p>
-            Analyzed campaign and channel performance data to compare email,
-            Instagram, and web banner results and support data-driven business decisions.
-        </p>
-        <a href="https://www.theforage.com/simulations/bcg/data-for-decision-makers-tod0/completed" target="_blank">
-            View BCG Project →
-        </a>
-    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-            Created and deployed a personal portfolio website using HTML,
-            GitHub, and GitHub Pages to showcase my skills and projects.
-        </p>
-        <a href="https://aravalver04.github.io/" target="_blank">
-            View Live Website →
-        </a>
-    </div>
-</section> 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            color: #666;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .statement {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #1f2937;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .project-card p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 8px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: #1f2937;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Aaryan Raval</h1>
+        <h2>Business Analytics &amp; Information Technology Student</h2>
+        <p>Rutgers Business School | Rutgers University–New Brunswick</p>
+    </header>
+
+    <section id="about">
+        <h2>Personal Statement</h2>
+
+        <div class="statement">
+            I am a Rutgers Business School student studying Business Analytics and
+            Information Technology with an interest in using data, technology,
+            and problem-solving to support business decisions.
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">R</span>
+            <span class="skill">Excel</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Business Analytics</span>
+            <span class="skill">Data Visualization</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Microsoft Office</span>
+            <span class="skill">GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Facility Location Optimization</h3>
+
+                <p>
+                    Developed an optimization model based on customer locations,
+                    weights, and distance to determine effective facility locations.
+                </p>
+
+                <a href="https://www.desmos.com/3d/zc2xqmu1bc" target="_blank">
+                    View 3D Model →
+                </a>
+
+                <a href="https://www.desmos.com/calculator/udiejelfoc" target="_blank">
+                    View Desmos Model →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>BCG – Introduction to Data for Decision Makers</h3>
+
+                <p>
+                    Analyzed campaign and channel performance data to compare email,
+                    Instagram, and web banner results and support data-driven
+                    business decisions.
+                </p>
+
+                <a href="https://www.theforage.com/simulations/bcg/data-for-decision-makers-tod0/completed" target="_blank">
+                    View BCG Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    Created and deployed a personal portfolio website using HTML,
+                    GitHub, and GitHub Pages to showcase my skills and projects.
+                </p>
+
+                <a href="https://aravalver04.github.io/" target="_blank">
+                    View Live Website →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Aaryan Raval</p>
+    </footer>
+
+</body>
+</html> 
